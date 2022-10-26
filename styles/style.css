@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: hsl(180, 52%, 96%);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+header {
+    height: 14vh;
+    width: 100%;
+    background: hsl(180, 29%, 50%) url(../images/bg-header-desktop.svg);
+}
+
+.master {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background:white ;
+    width: 70%;
+    height: 140px;
+    margin: 20px 0;
+    border-radius: 6px;
+    box-shadow: 0 15px 15px hsl(180, 52%, 86%);
+}
+
+.left {
+    display: flex;
+    width: 68%;
+    align-items: center;
+}
+
+.right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.span-div span {
+    margin-top: 3px;
+}
+
+.filter-container {
+    box-sizing: border-box;
+    background: white;
+    display: flex;
+    width: 70%;
+    border-radius: 6px;
+    box-shadow: 0 15px 15px hsl(180, 52%, 86%);
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+
+.position {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.position:hover {
+    color: hsl(180, 29%, 50%);
+}
+
+ul {
+    margin-top: 5px;
+}
+
+.company {
+    color:  hsl(180, 29%, 50%);
+    margin: 0 0 8px 0;
+}
+
+.span-div {
+    background: hsl(180, 31%, 95%);
+    color: hsl(180, 29%, 50%);
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.span-div:hover {
+    color: white;
+    background: hsl(180, 29%, 50%);
+}
+
+.new {
+    color: white;
+    padding: 6px 6px 3px 6px;
+    background: hsl(180, 29%, 50%);
+    border-radius: 12px;
+    margin: 0 2px 0 12px;
+    font-size: 0.9rem;
+}
+
+.featured {
+    color: white;
+    padding: 6px 6px 3px 6px;
+    background: hsl(180, 14%, 20%);
+    border-radius: 12px;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+.contract, 
+.posted{
+    font-weight: 500;
+    color: hsl(180, 8%, 52%);
+    margin: 0 14px;
+}
+
+.location {
+    font-weight: 500;
+    margin: 0 14px 0 0;
+    color: hsl(180, 8%, 52%);
+}
+
+.contract::after,
+.location::after {
+    align-items: flex-end;
+    content: '';
+    position: absolute;
+    text-align: center;
+    margin: 5px 14px;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background: hsl(180, 8%, 52%);
+}
+
+@media (max-width: 950px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 950px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 950px) {
+    .img-container {
+        width: 20%;
+    }
+}
